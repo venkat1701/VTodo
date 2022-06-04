@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="611.0" prefWidth="736.0" styleClass="primary-color" stylesheets="@css/welcome.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.venkat1701.vtodo.controller.WelcomeController">
+   <left>
+      <VBox prefHeight="522.0" prefWidth="280.0" spacing="20.0" styleClass="secondary-color" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="64.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" styleClass="imageview">
+                     <image>
+                        <Image url="@images/avatar.jpg" />
+                     </image>
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" height="12.21" radius="8.535" width="23.93">
+                           <color>
+                              <Color red="0.7894737124443054" green="0.7602339386940002" blue="0.7602339386940002" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </ImageView>
+                  <VBox maxWidth="1.7976931348623157E308" prefHeight="64.0" prefWidth="136.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label maxWidth="1.7976931348623157E308" prefHeight="24.0" prefWidth="133.0" text="Venkat J" textFill="#f5eeee" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label maxWidth="1.7976931348623157E308" prefHeight="22.0" prefWidth="116.0" text="thejeastdev@gmail.com" textFill="#f5eeee" VBox.vgrow="ALWAYS" />
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="20.0" prefWidth="200.0" styleClass="searchbox">
+               <children>
+                  <TextField maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="163.0" promptText="Search" styleClass="searchbar" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="HoloLens MDL2 Assets" size="14.0" />
+                     </font>
+                  </TextField>
+                  <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="35.0" styleClass="action-button" text="🔎" textFill="#f5efef">
+                     <font>
+                        <Font name="Constantia" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <VBox fx:id="menubox" prefHeight="200.0" prefWidth="100.0" spacing="2.0" styleClass="menubox">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="20.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="260.0" styleClass="hbbuttons" text="My Day" textFill="#e1dfdf">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/sun.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Corbel Light" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="20.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="260.0" styleClass="hbbuttons" text="Important" textFill="#e1dfdf">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/star.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Corbel Light" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="20.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="260.0" styleClass="hbbuttons" text="Planned" textFill="#e1dfdf">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/plan.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Corbel Light" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="20.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="260.0" styleClass="hbbuttons" text="Assigned to Me" textFill="#e1dfdf">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/yoga.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Corbel Light" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="20.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="260.0" styleClass="hbbuttons" text="Tasks" textFill="#e1dfdf">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/home.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Corbel Light" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Separator prefWidth="200.0" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="133.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label prefHeight="34.0" prefWidth="117.0" text="My Day" textFill="#eee5e5">
+                           <font>
+                              <Font name="Corbel Bold" size="27.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="41.0" prefWidth="117.0" text="Wednesday, June 6" textFill="#eee5e5">
+                           <font>
+                              <Font name="Corbel Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </VBox>
+                  <Pane maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0" spacing="10.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="31.0" styleClass="action-button" text="💡" textFill="#eeebeb" />
+                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="33.0" styleClass="more-button" text="..." textAlignment="CENTER" textFill="#f2eded">
+                           <font>
+                              <Font name="Consolas Bold Italic" size="11.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <ScrollPane hbarPolicy="NEVER" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" vbarPolicy="NEVER" VBox.vgrow="ALWAYS">
+               <content>
+                  <VBox fx:id="vbox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="316.0" prefWidth="402.0" spacing="5.0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+            <HBox fx:id="addtask" alignment="CENTER_LEFT" onKeyPressed="#generateAction" prefHeight="40.0" prefWidth="416.0" spacing="10.0" styleClass="entry-box">
+               <children>
+                  <Label alignment="CENTER" prefHeight="40.0" prefWidth="40.0" text="+" textFill="#f8f4f4">
+                     <font>
+                        <Font name="Constantia Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="input" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="382.0" promptText="Add a Task" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Ebrima" size="12.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>

@@ -1,0 +1,93 @@
+.primary-color{
+    -fx-background-image: url("../images/back2.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
+
+.secondary-color{
+    -fx-background-color: rgba(33, 33, 33, 0.62);
+}
+
+.action-button{
+    -fx-background-color: #212121;
+    -fx-border-radius: 15 15 15 15;
+}
+
+.action-button:hover{
+    -fx-background-color: #414141;
+}
+
+.more-button{
+    -fx-background-color: transparent;
+}
+
+.more-button:hover{
+    -fx-background-color: rgba(255, 255, 255, 0.29);
+}
+
+.imageview{
+    -fx-background-radius: 100 100 100 100;
+    -fx-border-width: 1;
+    -fx-border-radius: 100 100 100 100;
+}
+
+.searchbar{
+    -fx-background-color: transparent;
+
+}
+
+.searchbox{
+    -fx-background-color: transparent;
+    -fx-border-width: 0.2 0.2 1.5 0.2;
+    -fx-border-color: #bbb;
+    -fx-border-radius: 3;
+}
+
+.searchbox:hover{
+    -fx-border-color: #fff;
+}
+
+.text-input{
+    -fx-text-fill: #fff;
+}
+
+.hbbuttons{
+    -fx-background-color: transparent;
+}
+
+.hbbuttons:hover{
+    -fx-border-radius: 2;
+    -fx-border-width: 0 0 0 1.5;
+    -fx-border-color: #01e9ff;
+    -fx-background-color: #414141;
+    -fx-translate-z: 10;
+    -fx-effect: dropshadow( gaussian , rgba(174, 185, 185, 0.47), 8,0,0,1 );
+}
+
+
+.scroll-pane{
+    -fx-background: transparent;
+}
+
+
+.entry-box{
+    -fx-background-color: rgba(35, 34, 34, 0.33);
+    -fx-background-radius: 5;
+}
+
+.entry-box .text-field{
+    -fx-background-color: transparent;
+    -fx-text-fill: #ddd;
+}
+
+
+
+.entry-box:hover{
+    -fx-background-color: #414141;
+}
+
+.scroll-pane{
+    -fx-background-color: transparent;
+    -fx-fit-to-height: true;
+    -fx-fit-to-width: true;
+}

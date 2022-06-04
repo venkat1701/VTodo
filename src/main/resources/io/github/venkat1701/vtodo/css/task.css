@@ -1,0 +1,15 @@
+.hbox{
+    -fx-background-color: rgba(35, 34, 34, 0.33);
+    -fx-background-radius: 5;
+}
+
+
+.hbox .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: #ddd;
+}
+.hbox:hover{
+    -fx-background-color: rgba(65, 65, 65, 0.7);
+}
+
+
