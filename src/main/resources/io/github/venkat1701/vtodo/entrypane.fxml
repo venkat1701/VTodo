@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="addtask" alignment="CENTER_LEFT" onKeyPressed="#generateAction" prefHeight="40.0" prefWidth="416.0" spacing="10.0" styleClass="primary-color" stylesheets="@css/entrypane.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.venkat1701.vtodo.controller.EntryPaneController">
+   <children>
+      <Label alignment="CENTER" prefHeight="40.0" prefWidth="40.0" text="+" textFill="#f8f4f4">
+         <font>
+            <Font name="Constantia Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="input" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="382.0" promptText="Add a Task" styleClass="text-field" stylesheets="@css/entrypane.css" HBox.hgrow="ALWAYS">
+         <font>
+            <Font name="Ebrima" size="12.0" />
+         </font>
+      </TextField>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</HBox>

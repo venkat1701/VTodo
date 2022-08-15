@@ -2,32 +2,46 @@ package io.github.venkat1701.vtodo.controller;
 
 import io.github.venkat1701.vtodo.FXMLManager;
 import io.github.venkat1701.vtodo.entity.TaskEntity;
+import io.github.venkat1701.vtodo.service.QuoteService;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.SneakyThrows;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
+import java.time.LocalDate;
 import java.util.List;
 import java.util.ResourceBundle;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-
 
 public class WelcomeController implements Initializable {
+
+    private static WelcomeController controller = new WelcomeController();
+
+    private static QuoteService service;
+    @Getter @Setter
+    private static VBox list;
 
     private List<String> imagesList;
     @FXML
     private BorderPane pane;
 
     @FXML
+    @Getter
     private VBox vbox;
+
+    @FXML
+    private Button suggest;
 
     @FXML
     private HBox addtask;
@@ -51,20 +65,37 @@ public class WelcomeController implements Initializable {
 
             this.vbox.getChildren().add(box);
             input.setText("");
+            list = this.vbox;
         }
+    }
+
+    @FXML
+    public void suggestSongs(MouseEvent me){
+        service.createQuotes();
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+//            var gson = new Gson();
+//            var quoteDao = gson.fromJson(HttpSendRequest.sendRequest(), QuoteDao.class);
+//
+//            System.out.println(quoteDao.getContent());
+        int size = service.getQuotes().size();
+        String quote = service.getQuotes().get(size-1);
+        alert.setTitle("Today's Motivation");
+        String str = LocalDate.now().getDayOfWeek().toString();
+        alert.setHeaderText(String.format("%s 's Motivation", str.charAt(0) + str.substring(1).toLowerCase()));
+        alert.setContentText(quote);
+        alert.showAndWait();
+
     }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        ExecutorService service = Executors.newScheduledThreadPool(2);
+        service = new QuoteService();
+    }
 
-        imagesList = new ArrayList<>();
-        imagesList.add("../images/back1.jpg");
-        imagesList.add("../images/back2.png");
 
-//        service.execute(() -> {
-//           pane.setStyle(String.format("-fx-background-image: url(\"%s\");", imagesList.get(1)));
-//            System.out.println(String.format("-fx-background-image: url(\"%s\")", imagesList.get(1)));
-//        });
+
+    public static void removeHBox(HBox hBox) {
+        if(list != null)
+            list.getChildren().remove(hBox);
     }
 }

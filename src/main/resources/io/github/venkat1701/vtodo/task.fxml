@@ -6,9 +6,9 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="416.0" spacing="10.0" styleClass="hbox" stylesheets="@css/task.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.venkat1701.vtodo.controller.TaskController">
+<HBox fx:id="box" alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="416.0" spacing="10.0" styleClass="hbox" stylesheets="@css/task.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.venkat1701.vtodo.controller.TaskController">
    <children>
-      <RadioButton fx:id="radio" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" textFill="#0b91eb" />
+      <RadioButton fx:id="radio" contentDisplay="CENTER" mnemonicParsing="false" onAction="#removeBox" prefHeight="40.0" prefWidth="40.0" textFill="#0b91eb" />
       <Label fx:id="label" maxWidth="1.7976931348623157E308" prefWidth="361.0" text="Task #1" HBox.hgrow="ALWAYS">
          <font>
             <Font name="Corbel Bold" size="15.0" />

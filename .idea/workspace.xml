@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e327d314-9c75-47cc-aa7c-03cb7ccf3059" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/venkat1701/vtodo/controller/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/venkat1701/vtodo/controller/TaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/venkat1701/vtodo/controller/WelcomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/venkat1701/vtodo/controller/WelcomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/io/github/venkat1701/vtodo/css/welcome.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/io/github/venkat1701/vtodo/css/welcome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/io/github/venkat1701/vtodo/task.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/io/github/venkat1701/vtodo/task.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/io/github/venkat1701/vtodo/welcome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/io/github/venkat1701/vtodo/welcome.fxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/io/github/venkat1701/vtodo/controller/WelcomeController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/io/github/venkat1701/vtodo/dao/QuoteDao.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/io/github/venkat1701/vtodo/service/QuoteService.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2A0bZMBovrt9RtYKhYADWXHpVHb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ariha/Desktop/SceneBuilder.lnk&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="io.github.venkat1701.vtodo" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.StartApplication">
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.venkat1701.vtodo.HelloApplication" />
+      <module name="VTodo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.venkat1701.vtodo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StartApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.venkat1701.vtodo.StartApplication" />
+      <module name="VTodo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.venkat1701.vtodo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.StartApplication" />
+        <item itemvalue="Application.HelloApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e327d314-9c75-47cc-aa7c-03cb7ccf3059" name="Changes" comment="" />
+      <created>1654149508773</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1654149508773</updated>
+      <workItem from="1654149510559" duration="7556000" />
+      <workItem from="1654178286123" duration="5340000" />
+      <workItem from="1654198432400" duration="3226000" />
+      <workItem from="1654241293318" duration="14536000" />
+      <workItem from="1654281841191" duration="597000" />
+      <workItem from="1654315367728" duration="599000" />
+      <workItem from="1654341034559" duration="1027000" />
+      <workItem from="1654349357463" duration="276000" />
+      <workItem from="1654353653160" duration="4102000" />
+      <workItem from="1654525193773" duration="5677000" />
+      <workItem from="1654531347805" duration="297000" />
+      <workItem from="1654531681813" duration="8169000" />
+      <workItem from="1654597286866" duration="7795000" />
+      <workItem from="1654622513875" duration="2197000" />
+      <workItem from="1655142637312" duration="1802000" />
+      <workItem from="1655222581839" duration="809000" />
+      <workItem from="1658598871044" duration="16000" />
+      <workItem from="1658598946076" duration="301000" />
+      <workItem from="1660487965238" duration="3424000" />
+      <workItem from="1660530100059" duration="10643000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
